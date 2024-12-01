@@ -1,7 +1,7 @@
-lst = [10, 20, 30, 40, 50, 60, 70, 80]
+def greet(name: str, age: int, gender: str):
+    print(f"My name is {name}")
+    print(f"My age is {age}")
+    print(f"my gender is {gender}")
 
 
-result = 0
-for i in range(len(lst)):
-    result += lst[i]
-print(result)
+greet("king virat", 36, "Alpha male")

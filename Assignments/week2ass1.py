@@ -1,57 +1,42 @@
-"""def max_find(a, b, c):
+# def maxi(num1, num2, num3):
+#     result = max(num1, num2, num3)
+#     print(f"{result} is the max number")
+
+
+# def mini(num1, num2, num3):
+#     result = min(num1, num2, num3)
+#     print(f"{result} is the min number")
+
+
+# num1 = 37
+# num2 = 59
+# num3 = 12
+
+# maxi(num1, num2, num3)
+# mini(num1, num2, num3)
+
+
+def maxi(a, b, c):
     if a >= b and a >= c:
-        return a
-    elif b >= a and b >= c:
-        return b
+        print(f"{a} is the max num")
+    elif b >= c:
+        print(f"{b} is max value")
     else:
-        return c
+        print(f"{c} is the max value")
 
 
-def mini_find(a, b, c):
+def mini(a, b, c):
     if a <= b and a <= c:
-        return a
-    elif b <= a and b <= c:
-        return b
+        print(f"{a} is the minimum number")
+    elif b <= c:
+        print(f"{b} is the minimum value")
     else:
-        return c
+        print(f"{c} is the minimum value")
 
 
-num1 = 20
-num2 = 25
-num3 = 19
+num1 = 44
+num2 = 54
+num3 = 432
 
-max_value = max_find(num1, num2, num3)
-mini_value = mini_find(num1, num2, num3)
-
-
-print(f"The maximum num is {max_value}")
-print(f"The minimun num is {mini_value}")"""
-
-
-def leap_year():
-    year = int(input("Enter a year = "))
-
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                print(f"{year} is a leap year")
-            else:
-                print(f"{year} is not a leap year")
-
-        else:
-            print(f"{year} is a leap year")
-    else:
-        print(f"{year} is not a leap year")
-
-
-leap_year()
-
-
-def marks(phy=0, chem=0, eng=0, sci=0, hin=0):
-    total = phy + chem + eng + sci + hin
-    percentage = (total / 500) * 100
-    print(f"your total marks {total}")
-    print(f"your percentage {percentage}")
-
-
-marks(56, 65)
+maxi(num1, num2, num3)
+mini(num1, num2, num3)

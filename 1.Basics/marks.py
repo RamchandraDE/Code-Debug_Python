@@ -1,13 +1,17 @@
-telugu = int(input("Enter telugu marks = "))
-hindi = int(input("Enter hindi marks = "))
-english = int(input("Enter english marks = "))
-math = int(input("Enter math marks = "))
-science = int(input("Enter science marks = "))
+"""ask marks from user history
+total
+percentage
 
+"""
 
-total = telugu + hindi + english + math + science
-print(f"Your total is = {total}")
+tel = int(input("Telugu marks = "))
+hi = int(input("Hindi marks ="))
+eng = int(input("English marks ="))
+math = int(input("Maths marks ="))
+sci = int(input("Science marks ="))
 
-percentage = total / 500 * 100
+marks = tel + hi + eng + math + sci
+percentage = marks / 500 * 100
 
-print(f"your percentage is = {percentage:.2f}")
+print(f" Your total marks {marks}")
+print(f"Total percentage {percentage :.2f}")
